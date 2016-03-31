@@ -6,11 +6,16 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/material")
     @Scripts.Render("~/bundles/modernizr")
-@*    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">*@
-</head>
+    @RenderSection("css", required: false)
+    <style type="text/css">
+        #sideNavBtn i{display:inline-block;vertical-align:middle;}
+    </style></head>
 <body>
+    <div class="navbar-fixed">
     <nav>
         <div class="nav-wrapper">
+            <a id="sideNavBtn" href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">view_list</i>
+            <span id="spyText">aaaaa</span></a>
             <a href="#!" class="brand-logo">Logo</a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="sass.html"><i class="material-icons left">search</i>Link with Left Icon</a></li>
@@ -18,17 +23,20 @@
             </ul>
         </div>
     </nav>
-   
+        </div>
+      
+
+
         @RenderBody()
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
-    
 
-    @Scripts.Render("~/bundles/jquery")
-@*    @Scripts.Render("~/bundles/bootstrap")*@
-    @Scripts.Render("~/bundles/material")
-    @RenderSection("scripts", required: false)
+
+        @Scripts.Render("~/bundles/jquery")
+        @*    @Scripts.Render("~/bundles/bootstrap")*@
+        @Scripts.Render("~/bundles/material")
+        @RenderSection("scripts", required: false)
 </body>
 </html>

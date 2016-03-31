@@ -2531,6 +2531,10 @@ $(document).ready(function(){
 
 
 			$('a[href=#' + visible[0].attr('id') + ']').addClass('active');
+			if (options.callback) {
+                options.callback($('a[href=#' + visible[0].attr('id') + ']').text());
+            }
+			
 		});
 		selector.on('scrollSpy:exit', function() {
 			visible = $.grep(visible, function(value) {

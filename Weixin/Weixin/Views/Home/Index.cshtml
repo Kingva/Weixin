@@ -2,41 +2,226 @@
     ViewBag.Title = "Home Page";
     Layout = "~/Views/Shared/_layoutmaterial.cshtml";
 }
-<ul class="collection">
-    <li class="collection-item avatar">
-        <img src="images/yuna.jpg" alt="" class="circle">
-        <span class="title">Title</span>
-        <p>
-            First Line <br>
-            Second Line
-        </p>
-        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-    </li>
-    <li class="collection-item avatar">
-        <i class="material-icons circle">folder</i>
-        <span class="title">Title</span>
-        <p>
-            First Line <br>
-            Second Line
-        </p>
-        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-    </li>
-    <li class="collection-item avatar">
-        <i class="material-icons circle green">insert_chart</i>
-        <span class="title">Title</span>
-        <p>
-            First Line <br>
-            Second Line
-        </p>
-        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-    </li>
-    <li class="collection-item avatar">
-        <i class="material-icons circle red">play_arrow</i>
-        <span class="title">Title</span>
-        <p>
-            First Line <br>
-            Second Line
-        </p>
-        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-    </li>
+
+@section css{
+
+    <style type="text/css">
+        .taped .controller {
+            -moz-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            -webkit-transition: all 0.3s ease 0s;
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            width:100%;
+            height:100%;
+            right: 0;
+            top:0;
+            transition: all 0.3s ease 0s;
+            
+        }
+        .modal .card {
+            margin:0;
+        }
+        .modal .card-action{text-align:right;}
+     
+    </style>
+}
+
+<ul id="slide-out" class="side-nav fixed section table-of-contents">
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#structure">Structure</a></li>
+    <li><a href="#initialization">Intialization</a></li>
+    <li><a href="#initialize">Intializatieeeeeeeeee</a></li>
 </ul>
+
+<ul class="collection">
+    <li class="collection-item avatar section scrollspy" id="introduction">
+        <img src="images/yuna.jpg" alt="" class="circle"> <span class="title" > Title</span > <p > First Line <br > Second Line
+        </p >
+
+    </li > <li class="collection-item avatar">
+        <i class="material-icons circle"> folder</i > <span class="title" > Title</span > <p > First Line <br > Second Line
+        </p > <a href="#!" class="secondary-content">
+            <i class="material-icons"> grade</i >
+        </a >
+    </li > <li class="collection-item avatar">
+        <i class="material-icons circle green"> insert_chart</i > <span class="title" > Title</span > <p > First Line <br > Second Line
+        </p > <a href="#!" class="secondary-content">
+            <i class="material-icons"> grade</i >
+        </a >
+    </li > <li class="collection-item avatar">
+        <i class="material-icons circle red"> play_arrow</i > <span class="title" > Title</span > <p > First Line <br > Second Line
+        </p > <a href="#!" class="secondary-content">
+            <i class="material-icons"> grade</i >
+        </a >
+    </li >
+    <li class="collection-item avatar section scrollspy" id="structure" >
+        <img src="images/yuna.jpg" alt="" class="circle"> <span class="title"> structurestructurestructure</span> <p>
+            First Line <br> Second Line
+        </p>
+
+    </li>
+    <li class="collection-item avatar">
+        <i class="material-icons circle"> folder</i> <span class="title"> Title</span> <p>
+            First Line <br> Second Line
+        </p> <a href="#!" class="secondary-content">
+            <i class="material-icons"> grade</i>
+        </a>
+    </li>
+    <li class="collection-item avatar">
+        <i class="material-icons circle green"> insert_chart</i> <span class="title"> Title</span> <p>
+            First Line <br> Second Line
+        </p> <a href="#!" class="secondary-content">
+            <i class="material-icons"> grade</i>
+        </a>
+    </li>
+    <li class="collection-item avatar">
+        <i class="material-icons circle red"> play_arrow</i> <span class="title"> Title</span> <p>
+            First Line <br> Second Line
+        </p> <a href="#!" class="secondary-content">
+            <i class="material-icons"> grade</i>
+        </a>
+    </li>
+    <li class="collection-item avatar">
+        <img src="images/yuna.jpg" alt="" class="circle"> <span class="title"> Title</span> <p>
+            First Line <br> Second Line
+        </p>
+
+    </li>
+    <li class="collection-item avatar">
+        <i class="material-icons circle"> folder</i> <span class="title"> Title</span> <p>
+            First Line <br> Second Line
+        </p> <a href="#!" class="secondary-content">
+            <i class="material-icons"> grade</i>
+        </a>
+    </li>
+    <li class="collection-item avatar section scrollspy" id="initialization">
+        <i class="material-icons circle green"> insert_chart</i> <span class="title"> Title</span> <p>
+            First Line <br> Second Line
+        </p> <a href="#!" class="secondary-content">
+            <i class="material-icons"> grade</i>
+        </a>
+    </li>
+    <li class="collection-item avatar">
+        <i class="material-icons circle red"> play_arrow</i> <span class="title"> Title</span> <p>
+            First Line <br> Second Line
+        </p> <a href="#!" class="secondary-content">
+            <i class="material-icons"> grade</i>
+        </a>
+    </li>
+    <li class="collection-item avatar">
+        <img src="images/yuna.jpg" alt="" class="circle"> <span class="title"> Title</span> <p>
+            First Line <br> Second Line
+        </p>
+
+    </li>
+    <li class="collection-item avatar">
+        <i class="material-icons circle"> folder</i> <span class="title"> Title</span> <p>
+            First Line <br> Second Line
+        </p> <a href="#!" class="secondary-content">
+            <i class="material-icons"> grade</i>
+        </a>
+    </li>
+    <li class="collection-item avatar">
+        <i class="material-icons circle green"> insert_chart</i> <span class="title"> Title</span> <p>
+            First Line <br> Second Line
+        </p> <a href="#!" class="secondary-content">
+            <i class="material-icons"> grade</i>
+        </a>
+    </li>
+    <li class="collection-item avatar">
+        <i class="material-icons circle red"> play_arrow</i> <span class="title"> Title</span> <p>
+            First Line <br> Second Line
+        </p> <a href="#!" class="secondary-content">
+            <i class="material-icons"> grade</i>
+        </a>
+    </li>
+    <li class="collection-item avatar">
+        <img src="images/yuna.jpg" alt="" class="circle"> <span class="title"> Title</span> <p>
+            First Line <br> Second Line
+        </p>
+
+    </li>
+    <li class="collection-item avatar">
+        <i class="material-icons circle"> folder</i> <span class="title"> Title</span> <p>
+            First Line <br> Second Line
+        </p> <a href="#!" class="secondary-content">
+            <i class="material-icons"> grade</i>
+        </a>
+    </li>
+    <li class="collection-item avatar section scrollspy"  id="initialize" >
+        <i class="material-icons circle green"> insert_chart</i> <span class="title"> Title</span> <p>
+            First Line <br> Second Line
+        </p> <a href="#!" class="secondary-content">
+            <i class="material-icons"> grade</i>
+        </a>
+    </li>
+    <li class="collection-item avatar">
+        <i class="material-icons circle red"> play_arrow</i> <span class="title"> Title</span> <p>
+            First Line <br> Second Line
+        </p> <a href="#!" class="secondary-content">
+            <i class="material-icons"> grade</i>
+        </a>
+    </li>
+</ul >
+
+<div id="controllerTemplateDom" class="hidden">
+   
+        <div class="fixed-action-btn horizontal controller">
+@*            <a class="btn-floating btn-large red">*@
+@*                <i class="large material-icons"> mode_edit</i>*@
+@*            </a>*@
+             <ul>
+                <li>
+                    <a class="btn-floating red waves-effect waves-light  modal-trigger" href="#modal1">
+                        <i class="material-icons"> insert_chart</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating yellow darken-1">
+                        <i class="material-icons"> format_quote</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating green">
+                        <i class="material-icons"> publish</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating blue">
+                        <i class="material-icons"> attach_file</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal ">
+     
+                <div class="card">
+                    <div class="card-image">
+                        <img src="http://materializecss.com/images/sample-1.jpg">
+                        <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="yellow-text lighten-1">
+                            <i class="material-icons small"> star</i> <i class="material-icons small"> star</i>
+                             <i class="material-icons small"> star</i> <i class="material-icons small"> star</i>
+                        </div>
+                        <p>
+                            I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a  class ="modal-action modal-close  waves-effect waves-green btn-flat" href="#">Close</a>
+                    </div>
+                </div>
+        
+       
+    </div>
+   </div>
+    
+@section scripts{
+    <script type="text/javascript" src="~/Scripts/index.js"></script>
+}
