@@ -2,12 +2,16 @@
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url(/Content/materialize-v0.97.5/font/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: url(	
+https://s3.amazonaws.com/weixinq/Content/materialize-v0.97.5/font/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
   src: local('Material Icons'),
        local('MaterialIcons-Regular'),
-       url(/Content/materialize-v0.97.5/font/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
-       url(/Content/materialize-v0.97.5/font/iconfont/MaterialIcons-Regular.woff) format('woff'),
-       url(/Content/materialize-v0.97.5/font/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+       url(	
+https://s3.amazonaws.com/weixinq/Content/materialize-v0.97.5/font/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+       url(	
+https://s3.amazonaws.com/weixinq/Content/materialize-v0.97.5/font/iconfont/MaterialIcons-Regular.woff) format('woff'),
+       url(	
+https://s3.amazonaws.com/weixinq/Content/materialize-v0.97.5/font/iconfont/MaterialIcons-Regular.ttf) format('truetype');
 }
 
 .material-icons {

@@ -3,12 +3,22 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>WeixinQ</title>
     @Styles.Render("~/Content/material")
     @Scripts.Render("~/bundles/modernizr")
     @RenderSection("css", required: false)
     <style type="text/css">
         #sideNavBtn i{display:inline-block;vertical-align:middle;}
+        body footer.page-footer{position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top:0;
+        }
+      
+        #shoppingCart i{position: absolute;
+    top: 10px; right:20px;}
+        
+
     </style></head>
 <body>
     <div class="navbar-fixed">
@@ -17,21 +27,39 @@
             <a id="sideNavBtn" href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">view_list</i>
             <span id="spyText">aaaaa</span></a>
             <a href="#!" class="brand-logo">Logo</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="sass.html"><i class="material-icons left">search</i>Link with Left Icon</a></li>
-                <li><a href="badges.html"><i class="material-icons right">view_module</i>Link with Right Icon</a></li>
-            </ul>
-        </div>
+@*            <ul class="right hide-on-med-and-down">*@
+@*                <li><a href="sass.html"><i class="material-icons left">search</i>Link with Left Icon</a></li>*@
+@*                <li><a href="badges.html"><i class="material-icons right">view_module</i>Link with Right Icon</a></li>*@
+            @*            </ul>*@
+          
+          
+</div>
     </nav>
         </div>
       
 
 
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+<hr/>
+
+        <footer class="page-footer">
+
+            <div class="footer-copyright">
+                <div class="container  white-text">
+                    <a id="shoppingCart" href="#" data-activates="slide-out" class="button-collapse white-text right">
+                        <div class="chip">
+                            <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3893056628,77690903&fm=116&gp=0.jpg" alt="Contact Person">
+                            <span id="totalValue">128.00</span>
+                        </div>
+                    </a>
+                    
+@*                   <div class="chip">3 </div>*@
+
+                       
+                    </div>
+            </div>
         </footer>
+
 
 
         @Scripts.Render("~/bundles/jquery")

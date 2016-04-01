@@ -14,7 +14,7 @@
             position: absolute;
             width:100%;
             height:100%;
-            right: 0;
+            right: 60px;
             top:0;
             transition: all 0.3s ease 0s;
             
@@ -23,7 +23,15 @@
             margin:0;
         }
         .modal .card-action{text-align:right;}
-     
+     .collection{    padding-bottom: 20px;}
+     .collection .fixed-action-btn.horizontal ul li {
+    display: inline-block;
+    margin: 20px 7% 0;
+}
+     .collection .fixed-action-btn.horizontal ul {right:0;}
+     .collection .circle{border-radius:0;}
+   #collectionList  .orderedCounter.secondary-content{    right: -6px;}
+
     </style>
 }
 
@@ -31,86 +39,77 @@
     <li><a href="#introduction">Introduction</a></li>
     <li><a href="#structure">Structure</a></li>
     <li><a href="#initialization">Intialization</a></li>
-    <li><a href="#initialize">Intializatieeeeeeeeee</a></li>
+    <li><a href="#initialize">Intializatie</a></li>
 </ul>
 
-<ul class="collection">
+<ul class="collection" id="collectionList">
     <li class="collection-item avatar section scrollspy" id="introduction">
-        <img src="images/yuna.jpg" alt="" class="circle"> <span class="title" > Title</span > <p > First Line <br > Second Line
+        <img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle"> 
+    <span class="title" > Title
+   </span > <p > First Line <br > Second Line
         </p >
 
     </li > <li class="collection-item avatar">
-        <i class="material-icons circle"> folder</i > <span class="title" > Title</span > <p > First Line <br > Second Line
-        </p > <a href="#!" class="secondary-content">
-            <i class="material-icons"> grade</i >
-        </a >
+               <img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle"> <span class="title" > Title</span > <p > First Line <br > Second Line
+        </p >
+               <a href="#!" class="secondary-content">
+                   <i class="material-icons"> grade</i>
+               </a>
     </li > <li class="collection-item avatar">
-        <i class="material-icons circle green"> insert_chart</i > <span class="title" > Title</span > <p > First Line <br > Second Line
-        </p > <a href="#!" class="secondary-content">
-            <i class="material-icons"> grade</i >
-        </a >
+               <img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle"> <span class="title" > Title</span > <p > First Line <br > Second Line
+        </p > 
     </li > <li class="collection-item avatar">
         <i class="material-icons circle red"> play_arrow</i > <span class="title" > Title</span > <p > First Line <br > Second Line
-        </p > <a href="#!" class="secondary-content">
-            <i class="material-icons"> grade</i >
-        </a >
+        </p >
     </li >
     <li class="collection-item avatar section scrollspy" id="structure" >
-        <img src="images/yuna.jpg" alt="" class="circle"> <span class="title"> structurestructurestructure</span> <p>
+        <img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle"> <span class="title"> structurestructurestructure</span> <p>
             First Line <br> Second Line
         </p>
-
+        <a href="#!" class="secondary-content">
+            <i class="material-icons"> grade</i>
+        </a>
     </li>
     <li class="collection-item avatar">
         <i class="material-icons circle"> folder</i> <span class="title"> Title</span> <p>
             First Line <br> Second Line
-        </p> <a href="#!" class="secondary-content">
-            <i class="material-icons"> grade</i>
-        </a>
+        </p> 
     </li>
     <li class="collection-item avatar">
         <i class="material-icons circle green"> insert_chart</i> <span class="title"> Title</span> <p>
             First Line <br> Second Line
-        </p> <a href="#!" class="secondary-content">
-            <i class="material-icons"> grade</i>
-        </a>
+        </p> 
     </li>
     <li class="collection-item avatar">
         <i class="material-icons circle red"> play_arrow</i> <span class="title"> Title</span> <p>
             First Line <br> Second Line
-        </p> <a href="#!" class="secondary-content">
-            <i class="material-icons"> grade</i>
-        </a>
+        </p>
     </li>
     <li class="collection-item avatar">
-        <img src="images/yuna.jpg" alt="" class="circle"> <span class="title"> Title</span> <p>
+        <img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle"> <span class="title"> Title</span> <p>
             First Line <br> Second Line
         </p>
-
+        <a href="#!" class="">
+            <i class="material-icons"> grade</i>
+        </a>
     </li>
     <li class="collection-item avatar">
         <i class="material-icons circle"> folder</i> <span class="title"> Title</span> <p>
             First Line <br> Second Line
-        </p> <a href="#!" class="secondary-content">
-            <i class="material-icons"> grade</i>
-        </a>
+        </p> 
     </li>
     <li class="collection-item avatar section scrollspy" id="initialization">
         <i class="material-icons circle green"> insert_chart</i> <span class="title"> Title</span> <p>
             First Line <br> Second Line
-        </p> <a href="#!" class="secondary-content">
-            <i class="material-icons"> grade</i>
-        </a>
+        </p> 
     </li>
     <li class="collection-item avatar">
         <i class="material-icons circle red"> play_arrow</i> <span class="title"> Title</span> <p>
             First Line <br> Second Line
-        </p> <a href="#!" class="secondary-content">
-            <i class="material-icons"> grade</i>
-        </a>
+        </p>
     </li>
     <li class="collection-item avatar">
-        <img src="images/yuna.jpg" alt="" class="circle"> <span class="title"> Title</span> <p>
+        <img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle"> <span class="title"> Title</span> <p>
             First Line <br> Second Line
         </p>
 
@@ -118,26 +117,20 @@
     <li class="collection-item avatar">
         <i class="material-icons circle"> folder</i> <span class="title"> Title</span> <p>
             First Line <br> Second Line
-        </p> <a href="#!" class="secondary-content">
-            <i class="material-icons"> grade</i>
-        </a>
+        </p> 
     </li>
     <li class="collection-item avatar">
         <i class="material-icons circle green"> insert_chart</i> <span class="title"> Title</span> <p>
             First Line <br> Second Line
-        </p> <a href="#!" class="secondary-content">
-            <i class="material-icons"> grade</i>
-        </a>
+        </p>
     </li>
     <li class="collection-item avatar">
         <i class="material-icons circle red"> play_arrow</i> <span class="title"> Title</span> <p>
             First Line <br> Second Line
-        </p> <a href="#!" class="secondary-content">
-            <i class="material-icons"> grade</i>
-        </a>
+        </p> 
     </li>
     <li class="collection-item avatar">
-        <img src="images/yuna.jpg" alt="" class="circle"> <span class="title"> Title</span> <p>
+        <img src="http://materializecss.com/images/yuna.jpg" alt="" class="circle"> <span class="title"> Title</span> <p>
             First Line <br> Second Line
         </p>
 
@@ -166,35 +159,33 @@
 </ul >
 
 <div id="controllerTemplateDom" class="hidden">
-   
-        <div class="fixed-action-btn horizontal controller">
-@*            <a class="btn-floating btn-large red">*@
-@*                <i class="large material-icons"> mode_edit</i>*@
-@*            </a>*@
-             <ul>
-                <li>
-                    <a class="btn-floating red waves-effect waves-light  modal-trigger" href="#modal1">
-                        <i class="material-icons"> insert_chart</i>
-                    </a>
-                </li>
-                <li>
-                    <a class="btn-floating yellow darken-1">
-                        <i class="material-icons"> format_quote</i>
-                    </a>
-                </li>
-                <li>
-                    <a class="btn-floating green">
-                        <i class="material-icons"> publish</i>
-                    </a>
-                </li>
-                <li>
-                    <a class="btn-floating blue">
-                        <i class="material-icons"> attach_file</i>
-                    </a>
-                </li>
-            </ul>
-        </div>
 
+    <div class="fixed-action-btn horizontal controller">
+        <ul>
+            <li>
+                <a class="btn-floating green btnRemoveFromOrder">
+                    <i class="material-icons">remove</i>
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating blue darken-1 modal-trigger" href="#modal1">
+                    <i class="material-icons"> business</i>
+                </a>
+            </li>
+
+            <li>
+                <a class="btn-floating red btnAddToOrder">
+                    <i class="material-icons">add</i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="orderedCounter secondary-content">
+        <span class="counterText new badge">0</span>
+        <input type="hidden" class="productionCounter" value="0"/>
+        <input type="hidden" class="pIdAndCount" name="pIdAndCount" value=""/>
+    </div>
     <!-- Modal Structure -->
     <div id="modal1" class="modal ">
      
